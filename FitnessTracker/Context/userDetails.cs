@@ -54,14 +54,14 @@ namespace FitnessTracker.Context
 
         public static void CreateUser(UserProfile profile)
         {
-            // create user Id.
+            // generate the user id.
             var currentLength = _users.Count;
             var newUserId = currentLength + 1;
             profile.User.UserId = newUserId;
 
-            // add the user
+            // add new user
             _users.Add(newUserId, profile.User);
-            // add the profile.
+            // add to profile.
             _userProfiles.Add(profile.UserName, profile);
 
             // set the current profile.
