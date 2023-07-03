@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FitnessTracker.Context;
 
 namespace FitnessTracker
 {
@@ -17,22 +18,23 @@ namespace FitnessTracker
             InitializeComponent();
         }
 
-        private void loginBtn_Click(object sender, EventArgs e)
+        private void loginBtn_Click(object sender, EventArgs estop)
         {
             // check the username and password validation
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
                 string userName = usernameTxt.Text.Trim();
                 string password = passwordTxt.Text.Trim();
-                /* if () 
+                if (userDetails.Login(userName, password)) 
                 {
-
+                    home Home = new home();
+                    Home.Activate();
+                    Home.Show();
                 }
                 else
                 {
                     MessageBox.Show("password or username you entered is incorrect", "Sorry");
                 }
-                */
             }
         }
 
