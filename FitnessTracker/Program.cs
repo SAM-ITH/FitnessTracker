@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FitnessTracker.Context;
 
 namespace FitnessTracker
 {
@@ -14,6 +15,9 @@ namespace FitnessTracker
         [STAThread]
         static void Main()
         {
+            // initilise the user details object
+            userDetails.InitializeUserDetails();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());
