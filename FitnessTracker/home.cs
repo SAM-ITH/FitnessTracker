@@ -9,15 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FitnessTracker.Context;
 using System.Globalization;
+using FitnessTracker.Services;
 
 namespace FitnessTracker
 {
     public partial class home : Form
     {
         private bool _isProfileLoaded;
+        private WorkoutService _workoutService;
+
         public home()
         {
             InitializeComponent();
+            _workoutService = new WorkoutService();
+            workoutCountLbl.Text = $"{_workoutService.GetWorkouts().Count}";
         }
 
         private void OnTabChanged(object sender, TabControlEventArgs estop) 
@@ -38,6 +43,14 @@ namespace FitnessTracker
                     _isProfileLoaded = true;
                 }
             }
+        }
+
+        private void addWorkoutBtn_Click(object sender, EventArgs e)
+        {
+            WorkoutForm workoutform = new WorkoutForm();
+            Hide();
+            workoutform.Activate();
+            workoutform.ShowDialog();
         }
     }
 }

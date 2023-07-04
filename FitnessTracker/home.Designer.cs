@@ -41,20 +41,22 @@ namespace FitnessTracker
             this.workoutLbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.profileTab = new System.Windows.Forms.TabPage();
-            this.reportTab = new System.Windows.Forms.TabPage();
-            this.fnameLbl = new System.Windows.Forms.Label();
-            this.lnameLbl = new System.Windows.Forms.Label();
-            this.userNameLbl = new System.Windows.Forms.Label();
-            this.ageLbl = new System.Windows.Forms.Label();
-            this.weightLbl = new System.Windows.Forms.Label();
-            this.heightLbl = new System.Windows.Forms.Label();
-            this.fnameTxt = new System.Windows.Forms.TextBox();
-            this.lnameTxt = new System.Windows.Forms.TextBox();
-            this.usernameTxt = new System.Windows.Forms.TextBox();
-            this.ageTxt = new System.Windows.Forms.TextBox();
-            this.weightTxt = new System.Windows.Forms.TextBox();
-            this.heightTxt = new System.Windows.Forms.TextBox();
             this.updateBtn = new System.Windows.Forms.Button();
+            this.heightTxt = new System.Windows.Forms.TextBox();
+            this.weightTxt = new System.Windows.Forms.TextBox();
+            this.ageTxt = new System.Windows.Forms.TextBox();
+            this.usernameTxt = new System.Windows.Forms.TextBox();
+            this.lnameTxt = new System.Windows.Forms.TextBox();
+            this.fnameTxt = new System.Windows.Forms.TextBox();
+            this.heightLbl = new System.Windows.Forms.Label();
+            this.weightLbl = new System.Windows.Forms.Label();
+            this.ageLbl = new System.Windows.Forms.Label();
+            this.userNameLbl = new System.Windows.Forms.Label();
+            this.lnameLbl = new System.Windows.Forms.Label();
+            this.fnameLbl = new System.Windows.Forms.Label();
+            this.reportTab = new System.Windows.Forms.TabPage();
+            this.addWorkoutBtn = new System.Windows.Forms.Button();
+            this.addCheatMealBtn = new System.Windows.Forms.Button();
             this.homeControl.SuspendLayout();
             this.homeTab.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -94,6 +96,7 @@ namespace FitnessTracker
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.addCheatMealBtn);
             this.panel1.Controls.Add(this.cheatMealsCountLbl);
             this.panel1.Controls.Add(this.cheatMealsLbl);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -132,6 +135,7 @@ namespace FitnessTracker
             // 
             // workoutPnl
             // 
+            this.workoutPnl.Controls.Add(this.addWorkoutBtn);
             this.workoutPnl.Controls.Add(this.workoutCountLbl);
             this.workoutPnl.Controls.Add(this.workoutLbl);
             this.workoutPnl.Controls.Add(this.pictureBox1);
@@ -193,6 +197,111 @@ namespace FitnessTracker
             this.profileTab.TabIndex = 1;
             this.profileTab.Text = "Profile";
             // 
+            // updateBtn
+            // 
+            this.updateBtn.Location = new System.Drawing.Point(357, 437);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(157, 40);
+            this.updateBtn.TabIndex = 12;
+            this.updateBtn.Text = "Update";
+            this.updateBtn.UseVisualStyleBackColor = true;
+            // 
+            // heightTxt
+            // 
+            this.heightTxt.Location = new System.Drawing.Point(308, 369);
+            this.heightTxt.Name = "heightTxt";
+            this.heightTxt.Size = new System.Drawing.Size(249, 29);
+            this.heightTxt.TabIndex = 11;
+            // 
+            // weightTxt
+            // 
+            this.weightTxt.Location = new System.Drawing.Point(308, 307);
+            this.weightTxt.Name = "weightTxt";
+            this.weightTxt.Size = new System.Drawing.Size(249, 29);
+            this.weightTxt.TabIndex = 10;
+            // 
+            // ageTxt
+            // 
+            this.ageTxt.Location = new System.Drawing.Point(308, 242);
+            this.ageTxt.Name = "ageTxt";
+            this.ageTxt.Size = new System.Drawing.Size(249, 29);
+            this.ageTxt.TabIndex = 9;
+            // 
+            // usernameTxt
+            // 
+            this.usernameTxt.Location = new System.Drawing.Point(308, 175);
+            this.usernameTxt.Name = "usernameTxt";
+            this.usernameTxt.Size = new System.Drawing.Size(249, 29);
+            this.usernameTxt.TabIndex = 8;
+            // 
+            // lnameTxt
+            // 
+            this.lnameTxt.Location = new System.Drawing.Point(308, 114);
+            this.lnameTxt.Name = "lnameTxt";
+            this.lnameTxt.Size = new System.Drawing.Size(249, 29);
+            this.lnameTxt.TabIndex = 7;
+            // 
+            // fnameTxt
+            // 
+            this.fnameTxt.Location = new System.Drawing.Point(308, 57);
+            this.fnameTxt.Name = "fnameTxt";
+            this.fnameTxt.Size = new System.Drawing.Size(249, 29);
+            this.fnameTxt.TabIndex = 6;
+            // 
+            // heightLbl
+            // 
+            this.heightLbl.AutoSize = true;
+            this.heightLbl.Location = new System.Drawing.Point(112, 369);
+            this.heightLbl.Name = "heightLbl";
+            this.heightLbl.Size = new System.Drawing.Size(71, 24);
+            this.heightLbl.TabIndex = 5;
+            this.heightLbl.Text = "Height";
+            // 
+            // weightLbl
+            // 
+            this.weightLbl.AutoSize = true;
+            this.weightLbl.Location = new System.Drawing.Point(112, 307);
+            this.weightLbl.Name = "weightLbl";
+            this.weightLbl.Size = new System.Drawing.Size(75, 24);
+            this.weightLbl.TabIndex = 4;
+            this.weightLbl.Text = "Weight";
+            // 
+            // ageLbl
+            // 
+            this.ageLbl.AutoSize = true;
+            this.ageLbl.Location = new System.Drawing.Point(112, 242);
+            this.ageLbl.Name = "ageLbl";
+            this.ageLbl.Size = new System.Drawing.Size(48, 24);
+            this.ageLbl.TabIndex = 3;
+            this.ageLbl.Text = "Age";
+            // 
+            // userNameLbl
+            // 
+            this.userNameLbl.AutoSize = true;
+            this.userNameLbl.Location = new System.Drawing.Point(112, 175);
+            this.userNameLbl.Name = "userNameLbl";
+            this.userNameLbl.Size = new System.Drawing.Size(114, 24);
+            this.userNameLbl.TabIndex = 2;
+            this.userNameLbl.Text = "User Name";
+            // 
+            // lnameLbl
+            // 
+            this.lnameLbl.AutoSize = true;
+            this.lnameLbl.Location = new System.Drawing.Point(112, 114);
+            this.lnameLbl.Name = "lnameLbl";
+            this.lnameLbl.Size = new System.Drawing.Size(108, 24);
+            this.lnameLbl.TabIndex = 1;
+            this.lnameLbl.Text = "Last Name";
+            // 
+            // fnameLbl
+            // 
+            this.fnameLbl.AutoSize = true;
+            this.fnameLbl.Location = new System.Drawing.Point(112, 57);
+            this.fnameLbl.Name = "fnameLbl";
+            this.fnameLbl.Size = new System.Drawing.Size(111, 24);
+            this.fnameLbl.TabIndex = 0;
+            this.fnameLbl.Text = "First Name";
+            // 
             // reportTab
             // 
             this.reportTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(211)))));
@@ -205,110 +314,24 @@ namespace FitnessTracker
             this.reportTab.TabIndex = 2;
             this.reportTab.Text = "Reports";
             // 
-            // fnameLbl
+            // addWorkoutBtn
             // 
-            this.fnameLbl.AutoSize = true;
-            this.fnameLbl.Location = new System.Drawing.Point(112, 57);
-            this.fnameLbl.Name = "fnameLbl";
-            this.fnameLbl.Size = new System.Drawing.Size(111, 24);
-            this.fnameLbl.TabIndex = 0;
-            this.fnameLbl.Text = "First Name";
+            this.addWorkoutBtn.Location = new System.Drawing.Point(91, 376);
+            this.addWorkoutBtn.Name = "addWorkoutBtn";
+            this.addWorkoutBtn.Size = new System.Drawing.Size(140, 49);
+            this.addWorkoutBtn.TabIndex = 3;
+            this.addWorkoutBtn.Text = "Add Workout";
+            this.addWorkoutBtn.UseVisualStyleBackColor = true;
+            this.addWorkoutBtn.Click += new System.EventHandler(this.addWorkoutBtn_Click);
             // 
-            // lnameLbl
+            // addCheatMealBtn
             // 
-            this.lnameLbl.AutoSize = true;
-            this.lnameLbl.Location = new System.Drawing.Point(112, 114);
-            this.lnameLbl.Name = "lnameLbl";
-            this.lnameLbl.Size = new System.Drawing.Size(108, 24);
-            this.lnameLbl.TabIndex = 1;
-            this.lnameLbl.Text = "Last Name";
-            // 
-            // userNameLbl
-            // 
-            this.userNameLbl.AutoSize = true;
-            this.userNameLbl.Location = new System.Drawing.Point(112, 175);
-            this.userNameLbl.Name = "userNameLbl";
-            this.userNameLbl.Size = new System.Drawing.Size(114, 24);
-            this.userNameLbl.TabIndex = 2;
-            this.userNameLbl.Text = "User Name";
-            // 
-            // ageLbl
-            // 
-            this.ageLbl.AutoSize = true;
-            this.ageLbl.Location = new System.Drawing.Point(112, 242);
-            this.ageLbl.Name = "ageLbl";
-            this.ageLbl.Size = new System.Drawing.Size(48, 24);
-            this.ageLbl.TabIndex = 3;
-            this.ageLbl.Text = "Age";
-            // 
-            // weightLbl
-            // 
-            this.weightLbl.AutoSize = true;
-            this.weightLbl.Location = new System.Drawing.Point(112, 307);
-            this.weightLbl.Name = "weightLbl";
-            this.weightLbl.Size = new System.Drawing.Size(75, 24);
-            this.weightLbl.TabIndex = 4;
-            this.weightLbl.Text = "Weight";
-            // 
-            // heightLbl
-            // 
-            this.heightLbl.AutoSize = true;
-            this.heightLbl.Location = new System.Drawing.Point(112, 369);
-            this.heightLbl.Name = "heightLbl";
-            this.heightLbl.Size = new System.Drawing.Size(71, 24);
-            this.heightLbl.TabIndex = 5;
-            this.heightLbl.Text = "Height";
-            // 
-            // fnameTxt
-            // 
-            this.fnameTxt.Location = new System.Drawing.Point(308, 57);
-            this.fnameTxt.Name = "fnameTxt";
-            this.fnameTxt.Size = new System.Drawing.Size(249, 29);
-            this.fnameTxt.TabIndex = 6;
-            // 
-            // lnameTxt
-            // 
-            this.lnameTxt.Location = new System.Drawing.Point(308, 114);
-            this.lnameTxt.Name = "lnameTxt";
-            this.lnameTxt.Size = new System.Drawing.Size(249, 29);
-            this.lnameTxt.TabIndex = 7;
-            // 
-            // usernameTxt
-            // 
-            this.usernameTxt.Location = new System.Drawing.Point(308, 175);
-            this.usernameTxt.Name = "usernameTxt";
-            this.usernameTxt.Size = new System.Drawing.Size(249, 29);
-            this.usernameTxt.TabIndex = 8;
-            // 
-            // ageTxt
-            // 
-            this.ageTxt.Location = new System.Drawing.Point(308, 242);
-            this.ageTxt.Name = "ageTxt";
-            this.ageTxt.Size = new System.Drawing.Size(249, 29);
-            this.ageTxt.TabIndex = 9;
-            // 
-            // weightTxt
-            // 
-            this.weightTxt.Location = new System.Drawing.Point(308, 307);
-            this.weightTxt.Name = "weightTxt";
-            this.weightTxt.Size = new System.Drawing.Size(249, 29);
-            this.weightTxt.TabIndex = 10;
-            // 
-            // heightTxt
-            // 
-            this.heightTxt.Location = new System.Drawing.Point(308, 369);
-            this.heightTxt.Name = "heightTxt";
-            this.heightTxt.Size = new System.Drawing.Size(249, 29);
-            this.heightTxt.TabIndex = 11;
-            // 
-            // updateBtn
-            // 
-            this.updateBtn.Location = new System.Drawing.Point(357, 437);
-            this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(157, 40);
-            this.updateBtn.TabIndex = 12;
-            this.updateBtn.Text = "Update";
-            this.updateBtn.UseVisualStyleBackColor = true;
+            this.addCheatMealBtn.Location = new System.Drawing.Point(85, 376);
+            this.addCheatMealBtn.Name = "addCheatMealBtn";
+            this.addCheatMealBtn.Size = new System.Drawing.Size(184, 49);
+            this.addCheatMealBtn.TabIndex = 3;
+            this.addCheatMealBtn.Text = "Add Cheat Meal";
+            this.addCheatMealBtn.UseVisualStyleBackColor = true;
             // 
             // home
             // 
@@ -360,5 +383,7 @@ namespace FitnessTracker
         private System.Windows.Forms.Label userNameLbl;
         private System.Windows.Forms.Label lnameLbl;
         private System.Windows.Forms.Label fnameLbl;
+        private System.Windows.Forms.Button addCheatMealBtn;
+        private System.Windows.Forms.Button addWorkoutBtn;
     }
 }

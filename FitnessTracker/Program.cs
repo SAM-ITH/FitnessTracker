@@ -17,6 +17,7 @@ namespace FitnessTracker
         {
             // initilise the user details object
             userDetails.InitializeUserDetails();
+            workoutDetails.InitializeWorkoutDetails();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

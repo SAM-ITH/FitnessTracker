@@ -13,6 +13,7 @@ namespace FitnessTracker.Context
         private static Hashtable _users;
         private static Hashtable _userProfiles;
         private static UserProfile _currentProfile;
+        private static Hashtable _workouts;
         private static bool _isUserAuthenticated = false;
 
         public static void InitializeUserDetails()
@@ -33,6 +34,9 @@ namespace FitnessTracker.Context
                 ["JohnWick"] = new UserProfile
                 { ProfileId = 2, User = (User)_users[2], UserName = "JohnWick", Password = "user@123" },
             };
+
+            // workouts 
+            _workouts = new Hashtable();
 
         }
 
