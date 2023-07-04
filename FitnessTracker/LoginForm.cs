@@ -27,9 +27,10 @@ namespace FitnessTracker
                 string password = passwordTxt.Text.Trim();
                 if (userDetails.Login(userName, password)) 
                 {
+                    Hide();
                     home Home = new home();
                     Home.Activate();
-                    Home.Show();
+                    Home.ShowDialog();
                 }
                 else
                 {
