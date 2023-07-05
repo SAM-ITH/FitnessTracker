@@ -21,9 +21,9 @@ namespace FitnessTracker.Context
             _users = new Hashtable
             {
                 [1] = new User
-                { UserId = 2, FirstName = "James", LastName = "Anthony", Age = 30, Height = 170, Weight = 65.5f, },
+                { UserId = 2, FirstName = "Samith", LastName = "Wijesinghe", Age = 29, Height = 182, Weight = 65.5f, },
                 [2] = new User
-                { UserId = 2, FirstName = "John", LastName = "Wick", Age = 40, Height = 180, Weight = 75.5f, },
+                { UserId = 2, FirstName = "Thilini", LastName = "Sakunthala", Age = 29, Height = 150, Weight = 50.5f, },
             };
 
             // profiles
@@ -31,8 +31,8 @@ namespace FitnessTracker.Context
             {
                 ["samith"] = new UserProfile
                 { ProfileId = 1, User = (User)_users[1], UserName = "samith", Password = "samith" },
-                ["JohnWick"] = new UserProfile
-                { ProfileId = 2, User = (User)_users[2], UserName = "JohnWick", Password = "user@123" },
+                ["saku"] = new UserProfile
+                { ProfileId = 2, User = (User)_users[2], UserName = "saku", Password = "saku" },
             };
 
             // workouts 

@@ -7,15 +7,11 @@ using System.Threading.Tasks;
 
 namespace FitnessTracker.Models
 {
-        public class Workout
+        public class Workout : GeneralDetails
         {
-            public int WorkoutId { get; set; }
-
             public WorkoutTypes Exercise { get; set; }
 
             public User User { get; set; }
-
-            public DateTime Created { get; set; }
 
             public Dictionary<string, double> Fields { get; set; }
         }
