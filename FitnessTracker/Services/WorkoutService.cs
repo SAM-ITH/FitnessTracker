@@ -19,5 +19,25 @@ namespace FitnessTracker.Services
         {
             return workoutDetails.GetWorkouts();
         }
+
+        public Workout GetWorkoutById(int id)
+        {
+            return workoutDetails.GetWorkoutById(id);
+        }
+
+        public void DeleteWorkout(int workoutId)
+        {
+            workoutDetails.DeleteWorkout(workoutId);
+        }
+
+        public List<Workout> GetWeeklyWorkouts(DateTime startDate, DateTime endDate)
+        {
+            return workoutDetails.GetWeeklyWorkouts(startDate, endDate);
+        }
+
+        public void EditWorkout(int workoutId, Workout newWorkout)
+        {
+            workoutDetails.EditWorkout(workoutId, newWorkout);
+        }
     }
 }

@@ -44,5 +44,61 @@ namespace FitnessTracker.Context
 
                 return new List<Workout>();
             }
+
+        public static Workout GetWorkoutById(int id)
+        {
+            var userName = userDetails.CurrentProfile.UserName;
+            if (_workouts.ContainsKey(userName))
+            {
+                var workouts = (List<Workout>)_workouts[userName];
+                return workouts.First(wk => wk.Id == id);
+            }
+
+            return null;
         }
+
+        public static void DeleteWorkout(int workoutId)
+        {
+            string userName = userDetails.CurrentProfile.UserName;
+            if (_workouts.ContainsKey(userName))
+            {
+                var workouts = (List<Workout>)_workouts[userName];
+                workouts.RemoveAll(wk => wk.Id == workoutId);
+                _workouts[userName] = workouts;
+            }
+        }
+
+        public static List<Workout> GetWeeklyWorkouts(DateTime startDate, DateTime endDate, bool isSorted = true)
+        {
+            string userName = userDetails.CurrentProfile.UserName;
+            var weeklyWorkouts = new List<Workout>();
+            if (_workouts.ContainsKey(userName))
+            {
+                var workouts = (List<Workout>)_workouts[userName];
+                var searchedWorkouts = workouts.Where(wk => wk.Created >= startDate && wk.Created <= endDate);
+                if (isSorted)
+                {
+                    weeklyWorkouts = searchedWorkouts.OrderBy(wk => wk.Created).ToList();
+                }
+                else
+                {
+                    weeklyWorkouts = searchedWorkouts.ToList();
+                }
+            }
+            return weeklyWorkouts;
+        }
+
+        public static void EditWorkout(int workoutId, Workout newWorkout)
+        {
+            string userName = userDetails.CurrentProfile.UserName;
+            if (_workouts.ContainsKey(userName))
+            {
+                var workouts = (List<Workout>)_workouts[userName];
+                var workout = workouts.First(wk => wk.Id == workoutId);
+                // modify
+                workout.Fields = newWorkout.Fields;
+                workout.Created = newWorkout.Created;
+            }
+        }
+    }
 }
