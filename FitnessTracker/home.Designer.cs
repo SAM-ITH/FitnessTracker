@@ -57,6 +57,14 @@ namespace FitnessTracker
             this.lnameLbl = new System.Windows.Forms.Label();
             this.fnameLbl = new System.Windows.Forms.Label();
             this.reportTab = new System.Windows.Forms.TabPage();
+            this.reportsHeaderLbl = new System.Windows.Forms.Label();
+            this.weeklyViewNavPnl = new System.Windows.Forms.Panel();
+            this.weeklyViewContentPnl = new System.Windows.Forms.Panel();
+            this.dailyListPnl = new System.Windows.Forms.Panel();
+            this.navPnlWeekLbl = new System.Windows.Forms.Label();
+            this.weelyViewPnlHeaderLbl = new System.Windows.Forms.Label();
+            this.leftArrowPic = new System.Windows.Forms.PictureBox();
+            this.rightArrowPic = new System.Windows.Forms.PictureBox();
             this.homeControl.SuspendLayout();
             this.homeTab.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -64,6 +72,11 @@ namespace FitnessTracker
             this.workoutPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.profileTab.SuspendLayout();
+            this.reportTab.SuspendLayout();
+            this.weeklyViewNavPnl.SuspendLayout();
+            this.weeklyViewContentPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.leftArrowPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightArrowPic)).BeginInit();
             this.SuspendLayout();
             // 
             // homeControl
@@ -326,6 +339,10 @@ namespace FitnessTracker
             // 
             this.reportTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(211)))));
             this.reportTab.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.reportTab.Controls.Add(this.dailyListPnl);
+            this.reportTab.Controls.Add(this.weeklyViewContentPnl);
+            this.reportTab.Controls.Add(this.weeklyViewNavPnl);
+            this.reportTab.Controls.Add(this.reportsHeaderLbl);
             this.reportTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(35)))), ((int)(((byte)(5)))));
             this.reportTab.Location = new System.Drawing.Point(4, 36);
             this.reportTab.Name = "reportTab";
@@ -333,6 +350,77 @@ namespace FitnessTracker
             this.reportTab.Size = new System.Drawing.Size(758, 501);
             this.reportTab.TabIndex = 2;
             this.reportTab.Text = "Reports";
+            // 
+            // reportsHeaderLbl
+            // 
+            this.reportsHeaderLbl.AutoSize = true;
+            this.reportsHeaderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportsHeaderLbl.Location = new System.Drawing.Point(272, 22);
+            this.reportsHeaderLbl.Name = "reportsHeaderLbl";
+            this.reportsHeaderLbl.Size = new System.Drawing.Size(180, 31);
+            this.reportsHeaderLbl.TabIndex = 0;
+            this.reportsHeaderLbl.Text = "Weekly View";
+            // 
+            // weeklyViewNavPnl
+            // 
+            this.weeklyViewNavPnl.Controls.Add(this.rightArrowPic);
+            this.weeklyViewNavPnl.Controls.Add(this.leftArrowPic);
+            this.weeklyViewNavPnl.Controls.Add(this.navPnlWeekLbl);
+            this.weeklyViewNavPnl.Location = new System.Drawing.Point(163, 72);
+            this.weeklyViewNavPnl.Name = "weeklyViewNavPnl";
+            this.weeklyViewNavPnl.Size = new System.Drawing.Size(381, 47);
+            this.weeklyViewNavPnl.TabIndex = 1;
+            // 
+            // weeklyViewContentPnl
+            // 
+            this.weeklyViewContentPnl.Controls.Add(this.weelyViewPnlHeaderLbl);
+            this.weeklyViewContentPnl.Location = new System.Drawing.Point(24, 144);
+            this.weeklyViewContentPnl.Name = "weeklyViewContentPnl";
+            this.weeklyViewContentPnl.Size = new System.Drawing.Size(713, 334);
+            this.weeklyViewContentPnl.TabIndex = 2;
+            // 
+            // dailyListPnl
+            // 
+            this.dailyListPnl.Location = new System.Drawing.Point(24, 189);
+            this.dailyListPnl.Name = "dailyListPnl";
+            this.dailyListPnl.Size = new System.Drawing.Size(713, 289);
+            this.dailyListPnl.TabIndex = 0;
+            // 
+            // navPnlWeekLbl
+            // 
+            this.navPnlWeekLbl.AutoSize = true;
+            this.navPnlWeekLbl.Location = new System.Drawing.Point(164, 11);
+            this.navPnlWeekLbl.Name = "navPnlWeekLbl";
+            this.navPnlWeekLbl.Size = new System.Drawing.Size(63, 24);
+            this.navPnlWeekLbl.TabIndex = 0;
+            this.navPnlWeekLbl.Text = "Week";
+            // 
+            // weelyViewPnlHeaderLbl
+            // 
+            this.weelyViewPnlHeaderLbl.AutoSize = true;
+            this.weelyViewPnlHeaderLbl.Location = new System.Drawing.Point(303, 9);
+            this.weelyViewPnlHeaderLbl.Name = "weelyViewPnlHeaderLbl";
+            this.weelyViewPnlHeaderLbl.Size = new System.Drawing.Size(66, 24);
+            this.weelyViewPnlHeaderLbl.TabIndex = 0;
+            this.weelyViewPnlHeaderLbl.Text = "label2";
+            // 
+            // leftArrowPic
+            // 
+            this.leftArrowPic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("leftArrowPic.BackgroundImage")));
+            this.leftArrowPic.Location = new System.Drawing.Point(22, 11);
+            this.leftArrowPic.Name = "leftArrowPic";
+            this.leftArrowPic.Size = new System.Drawing.Size(24, 24);
+            this.leftArrowPic.TabIndex = 1;
+            this.leftArrowPic.TabStop = false;
+            // 
+            // rightArrowPic
+            // 
+            this.rightArrowPic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rightArrowPic.BackgroundImage")));
+            this.rightArrowPic.Location = new System.Drawing.Point(343, 11);
+            this.rightArrowPic.Name = "rightArrowPic";
+            this.rightArrowPic.Size = new System.Drawing.Size(24, 24);
+            this.rightArrowPic.TabIndex = 2;
+            this.rightArrowPic.TabStop = false;
             // 
             // home
             // 
@@ -353,6 +441,14 @@ namespace FitnessTracker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.profileTab.ResumeLayout(false);
             this.profileTab.PerformLayout();
+            this.reportTab.ResumeLayout(false);
+            this.reportTab.PerformLayout();
+            this.weeklyViewNavPnl.ResumeLayout(false);
+            this.weeklyViewNavPnl.PerformLayout();
+            this.weeklyViewContentPnl.ResumeLayout(false);
+            this.weeklyViewContentPnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.leftArrowPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightArrowPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -386,5 +482,13 @@ namespace FitnessTracker
         private System.Windows.Forms.Label fnameLbl;
         private System.Windows.Forms.Button addCheatMealBtn;
         private System.Windows.Forms.Button addWorkoutBtn;
+        private System.Windows.Forms.Panel dailyListPnl;
+        private System.Windows.Forms.Panel weeklyViewContentPnl;
+        private System.Windows.Forms.Label weelyViewPnlHeaderLbl;
+        private System.Windows.Forms.Panel weeklyViewNavPnl;
+        private System.Windows.Forms.PictureBox rightArrowPic;
+        private System.Windows.Forms.PictureBox leftArrowPic;
+        private System.Windows.Forms.Label navPnlWeekLbl;
+        private System.Windows.Forms.Label reportsHeaderLbl;
     }
 }

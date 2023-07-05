@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using FitnessTracker.Context;
 using System.Globalization;
 using FitnessTracker.Services;
+using FitnessTracker.Utils;
 
 namespace FitnessTracker
 {
@@ -18,6 +19,7 @@ namespace FitnessTracker
         private bool _isProfileLoaded;
         private WorkoutService _workoutService;
         private CheatMealService _cheatMealService;
+        private WeeklyViewService _weeklyViewService;
 
         public home()
         {
@@ -45,6 +47,11 @@ namespace FitnessTracker
                     weightTxt.Text = user.Weight.ToString(CultureInfo.InvariantCulture);
                     _isProfileLoaded = true;
                 }
+            }
+            else if (estop.TabPage == reportTab)
+            {
+                navPnlWeekLbl.Text = DateUtil.CreateWeekText(DateTime.Today);
+                navPnlWeekLbl.Tag = DateTime.Today;
             }
         }
 
