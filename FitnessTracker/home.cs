@@ -17,12 +17,15 @@ namespace FitnessTracker
     {
         private bool _isProfileLoaded;
         private WorkoutService _workoutService;
+        private CheatMealService _cheatMealService;
 
         public home()
         {
             InitializeComponent();
             _workoutService = new WorkoutService();
+            _cheatMealService = new CheatMealService();
             workoutCountLbl.Text = $"{_workoutService.GetWorkouts().Count}";
+            cheatMealsCountLbl.Text = $"{_cheatMealService.GetCheatMeals().Count}";
         }
 
         private void OnTabChanged(object sender, TabControlEventArgs estop) 
@@ -51,6 +54,14 @@ namespace FitnessTracker
             Hide();
             workoutform.Activate();
             workoutform.ShowDialog();
+        }
+
+        private void addCheatMealBtn_Click(object sender, EventArgs e)
+        {
+            CheatMealForm cheatMealForm = new CheatMealForm();
+            Hide();
+            cheatMealForm.Activate();
+            cheatMealForm.ShowDialog();
         }
     }
 }

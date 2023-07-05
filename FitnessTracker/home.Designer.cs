@@ -33,10 +33,12 @@ namespace FitnessTracker
             this.homeControl = new System.Windows.Forms.TabControl();
             this.homeTab = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.addCheatMealBtn = new System.Windows.Forms.Button();
             this.cheatMealsCountLbl = new System.Windows.Forms.Label();
             this.cheatMealsLbl = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.workoutPnl = new System.Windows.Forms.Panel();
+            this.addWorkoutBtn = new System.Windows.Forms.Button();
             this.workoutCountLbl = new System.Windows.Forms.Label();
             this.workoutLbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -55,8 +57,6 @@ namespace FitnessTracker
             this.lnameLbl = new System.Windows.Forms.Label();
             this.fnameLbl = new System.Windows.Forms.Label();
             this.reportTab = new System.Windows.Forms.TabPage();
-            this.addWorkoutBtn = new System.Windows.Forms.Button();
-            this.addCheatMealBtn = new System.Windows.Forms.Button();
             this.homeControl.SuspendLayout();
             this.homeTab.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -105,6 +105,16 @@ namespace FitnessTracker
             this.panel1.Size = new System.Drawing.Size(331, 453);
             this.panel1.TabIndex = 1;
             // 
+            // addCheatMealBtn
+            // 
+            this.addCheatMealBtn.Location = new System.Drawing.Point(85, 376);
+            this.addCheatMealBtn.Name = "addCheatMealBtn";
+            this.addCheatMealBtn.Size = new System.Drawing.Size(184, 49);
+            this.addCheatMealBtn.TabIndex = 3;
+            this.addCheatMealBtn.Text = "Add Cheat Meal";
+            this.addCheatMealBtn.UseVisualStyleBackColor = true;
+            this.addCheatMealBtn.Click += new System.EventHandler(this.addCheatMealBtn_Click);
+            // 
             // cheatMealsCountLbl
             // 
             this.cheatMealsCountLbl.AutoSize = true;
@@ -143,6 +153,16 @@ namespace FitnessTracker
             this.workoutPnl.Name = "workoutPnl";
             this.workoutPnl.Size = new System.Drawing.Size(331, 453);
             this.workoutPnl.TabIndex = 0;
+            // 
+            // addWorkoutBtn
+            // 
+            this.addWorkoutBtn.Location = new System.Drawing.Point(91, 376);
+            this.addWorkoutBtn.Name = "addWorkoutBtn";
+            this.addWorkoutBtn.Size = new System.Drawing.Size(140, 49);
+            this.addWorkoutBtn.TabIndex = 3;
+            this.addWorkoutBtn.Text = "Add Workout";
+            this.addWorkoutBtn.UseVisualStyleBackColor = true;
+            this.addWorkoutBtn.Click += new System.EventHandler(this.addWorkoutBtn_Click);
             // 
             // workoutCountLbl
             // 
@@ -313,25 +333,6 @@ namespace FitnessTracker
             this.reportTab.Size = new System.Drawing.Size(758, 501);
             this.reportTab.TabIndex = 2;
             this.reportTab.Text = "Reports";
-            // 
-            // addWorkoutBtn
-            // 
-            this.addWorkoutBtn.Location = new System.Drawing.Point(91, 376);
-            this.addWorkoutBtn.Name = "addWorkoutBtn";
-            this.addWorkoutBtn.Size = new System.Drawing.Size(140, 49);
-            this.addWorkoutBtn.TabIndex = 3;
-            this.addWorkoutBtn.Text = "Add Workout";
-            this.addWorkoutBtn.UseVisualStyleBackColor = true;
-            this.addWorkoutBtn.Click += new System.EventHandler(this.addWorkoutBtn_Click);
-            // 
-            // addCheatMealBtn
-            // 
-            this.addCheatMealBtn.Location = new System.Drawing.Point(85, 376);
-            this.addCheatMealBtn.Name = "addCheatMealBtn";
-            this.addCheatMealBtn.Size = new System.Drawing.Size(184, 49);
-            this.addCheatMealBtn.TabIndex = 3;
-            this.addCheatMealBtn.Text = "Add Cheat Meal";
-            this.addCheatMealBtn.UseVisualStyleBackColor = true;
             // 
             // home
             // 
