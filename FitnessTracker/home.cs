@@ -19,6 +19,7 @@ namespace FitnessTracker
     public partial class home : Form
     {
         private bool _isProfileLoaded;
+        private UserProfile _userProfiles;
         private WorkoutService _workoutService;
         private CheatMealService _cheatMealService;
         private WeeklyViewService _weeklyViewService;
@@ -145,6 +146,23 @@ namespace FitnessTracker
                 dailyListPnl.Controls.Add(dailyPanel);
                 index++;
             }
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            /*
+            if (ValidateChildren(ValidationConstraints.Enabled))
+            {
+                _userProfiles.User.FirstName = fnameTxt.Text;
+                _userProfiles.User.LastName = lnameTxt.Text;
+                _userProfiles.User.Age = int.Parse(ageTxt.Text);
+                _userProfiles.User.Height = int.Parse(heightTxt.Text);
+                _userProfiles.User.Weight = (float)double.Parse(weightTxt.Text);
+
+
+                MessageBox.Show("User updated successfully.", "Success!");
+            }
+            */
         }
     }
 }

@@ -58,12 +58,12 @@ namespace FitnessTracker.Context
 
         public static void CreateUser(UserProfile profile)
         {
-            // generate the user id.
+            // create the user id.
             var currentLength = _users.Count;
             var newUserId = currentLength + 1;
             profile.User.UserId = newUserId;
 
-            // add new user
+            // new user
             _users.Add(newUserId, profile.User);
             // add to profile.
             _userProfiles.Add(profile.UserName, profile);
@@ -100,5 +100,26 @@ namespace FitnessTracker.Context
 
             return false;
         }
+
+        public static void Logout()
+        {
+            _currentProfile = null;
+            _isUserAuthenticated = false;
+        }
+
+        public static string GetUserFirstName()
+        {
+            return _currentProfile.User.FirstName;
+        }
+
+        // TODO: ISHAN: implement in CW2?
+        public static void UpdateUser(User user)
+        {
+            if (_userProfiles.ContainsKey(CurrentProfile.UserName))
+            {
+
+            }
+        }
+
     }
 }

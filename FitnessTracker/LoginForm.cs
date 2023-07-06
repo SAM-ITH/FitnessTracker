@@ -70,6 +70,12 @@ namespace FitnessTracker
             }
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RegisterForm register = new RegisterForm();
+            Hide();
+            register.Activate();
+            register.ShowDialog();
+        }
     }
 }

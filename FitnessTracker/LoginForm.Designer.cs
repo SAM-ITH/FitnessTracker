@@ -37,6 +37,7 @@ namespace FitnessTracker
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.loginBtn = new System.Windows.Forms.Button();
             this.loginErrorMessage = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.loginErrorMessage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,12 +106,25 @@ namespace FitnessTracker
             // 
             this.loginErrorMessage.ContainerControl = this;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(35)))), ((int)(((byte)(5)))));
+            this.button1.Location = new System.Drawing.Point(187, 366);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 35);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "SignUp";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(808, 595);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.passwordTxt);
             this.Controls.Add(this.usernameTxt);
@@ -134,6 +148,7 @@ namespace FitnessTracker
         private System.Windows.Forms.TextBox passwordTxt;
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.ErrorProvider loginErrorMessage;
+        private System.Windows.Forms.Button button1;
     }
 }
 
