@@ -72,8 +72,6 @@ namespace FitnessTracker.Utils
         private void CreateCheatMealFields(Panel panel)
         {
             CheatMeal cheatMeal = (CheatMeal)_detail;
-            // key label
-            //CreateFieldValues(panel, 0, "Amount (in grams)", cheatMeal.MealAmount);
         }
 
         private void CreateWorkoutFields(Panel panel)

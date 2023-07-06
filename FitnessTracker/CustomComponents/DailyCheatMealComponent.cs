@@ -28,9 +28,9 @@ namespace FitnessTracker.CustomComponents
 
         private void LoadCheatMeal()
         {
-            // load meal type.
+           
             mealLbl.Text = _cheatMeal.MealType.ToString();
-            //lblAmountValue.Text = $"{_cheatMeal.MealAmount} g";
+            
         }
     }
 }

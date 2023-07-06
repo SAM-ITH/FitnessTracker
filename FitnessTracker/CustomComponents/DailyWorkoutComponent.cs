@@ -30,7 +30,7 @@ namespace FitnessTracker.CustomComponents
 
         private void LoadWorkout()
         {
-            // load exercise type.
+            // load workout type.
             workoutTypeLbl.Text = _workout.Exercise.ToString();
             var detailHelper = new DetailUtil(_workout);
             // load workout fields.

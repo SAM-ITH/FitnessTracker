@@ -48,7 +48,6 @@ namespace FitnessTracker.CustomComponents
             }
             else
             {
-                // display the message
                 int workoutCount = _dailyDetail.Workouts.Count;
                 int cheatMealCount = _dailyDetail.CheatMeals.Count;
                 dailyCompMessageLbl.Text = $"{workoutCount} Workouts/{cheatMealCount} CheatMeals";

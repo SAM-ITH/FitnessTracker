@@ -115,7 +115,7 @@ namespace FitnessTracker
             workout.Fields = fields;
         }
 
-        #region Creating Fields
+        
         private void CreateDistanceFields(Dictionary<string, double> fields)
         {
             var controls = workoutControlPnl.Controls.Find("txtDistance", false).First();
@@ -151,9 +151,9 @@ namespace FitnessTracker
                 fields.Add("Reps", double.Parse(txtBox.Text));
             }
         }
-        #endregion
+       
 
-        #region Workout TextBox Validation
+        // Workout TextBox Validation
         private bool ValidateAdditionalFields()
         {
             foreach (Control control in workoutControlPnl.Controls)
@@ -215,7 +215,7 @@ namespace FitnessTracker
                 workoutErrorMessage.SetError(txtBox, string.Empty);
             }
         }
-        #endregion
+       
 
         private void WorkoutTypes_Validated(object sender, CancelEventArgs e)
         {

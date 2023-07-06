@@ -97,8 +97,6 @@ namespace FitnessTracker.Context
             {
                 var cheatMeals = (List<CheatMeal>)_cheatMeals[userName];
                 var cheatMeal = cheatMeals.First(cm => cm.Id == cheatMealId);
-                // modify
-                //cheatMeal.MealAmount = newCheatMeal.MealAmount;
                 cheatMeal.Created = newCheatMeal.Created;
             }
         }

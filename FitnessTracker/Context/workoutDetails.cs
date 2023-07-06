@@ -22,7 +22,7 @@ namespace FitnessTracker.Context
                 var userName = userDetails.CurrentProfile.UserName;
                 if (_workouts.ContainsKey(userName))
                 {
-                    // get workout list.
+                    // retvire workout list.
                     var workoutList = (List<Workout>)_workouts[userName];
                     workoutList.Add(workout);
                     _workouts[userName] = workoutList;
@@ -94,7 +94,6 @@ namespace FitnessTracker.Context
             {
                 var workouts = (List<Workout>)_workouts[userName];
                 var workout = workouts.First(wk => wk.Id == workoutId);
-                // modify
                 workout.Fields = newWorkout.Fields;
                 workout.Created = newWorkout.Created;
             }

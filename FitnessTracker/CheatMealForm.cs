@@ -21,7 +21,7 @@ namespace FitnessTracker
             InitializeComponent();
             _cheatMealService = new CheatMealService();
             cheatMealDatePicker.MaxDate = DateTime.Now;
-            //cmbCheatMealTypes.Items.AddRange(EnumHelper.LoadItems<MealType>());
+            
         }
 
         private void cheatMealSaveBtn_Click(object sender, EventArgs e)
@@ -35,15 +35,13 @@ namespace FitnessTracker
 
         private void CreateCheatMeal()
         {
-            //MealType cheatMealType = (MealType)cmbCheatMealTypes.SelectedItem;
-            //double grams = double.Parse(txtAmount.Text);
+            
             String cheatMealType = cheatMealTxt.Text;
             DateTime date = cheatMealDatePicker.Value;
 
             CheatMeal cheatMeal = new CheatMeal
             {
                 MealType = cheatMealType,
-                //Gram = grams,
                 Created = date
             };
 
@@ -58,24 +56,6 @@ namespace FitnessTracker
             Home.ShowDialog();
         }
 
-        //Field Validations
-        /*
-        private void cmbCheatMealTypes_Validating(object sender, CancelEventArgs e)
-        {
-            ComboBox cmb = sender as ComboBox;
-            if (string.IsNullOrEmpty(cmb.SelectedItem.ToString()))
-            {
-                e.Cancel = true;
-                cmb.Focus();
-                CheatMealErrorHandler.SetError(cmb, "Please select a meal type.");
-            }
-            else
-            {
-                e.Cancel = false;
-                CheatMealErrorHandler.SetError(cmb, string.Empty);
-            }
-        }
-        */
 
         private void txtAmount_Validating(object sender, CancelEventArgs e)
         {
