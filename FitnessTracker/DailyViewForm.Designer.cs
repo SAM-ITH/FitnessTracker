@@ -29,23 +29,23 @@ namespace FitnessTracker
         /// </summary>
         private void InitializeComponent()
         {
-            this.daliViewHeaderLbl = new System.Windows.Forms.Label();
+            this.daliyViewHeaderLbl = new System.Windows.Forms.Label();
             this.detailsTab = new System.Windows.Forms.TabControl();
             this.WorkoutsTab = new System.Windows.Forms.TabPage();
             this.CheatMealsTab = new System.Windows.Forms.TabPage();
             this.detailsTab.SuspendLayout();
             this.SuspendLayout();
             // 
-            // daliViewHeaderLbl
+            // daliyViewHeaderLbl
             // 
-            this.daliViewHeaderLbl.AutoSize = true;
-            this.daliViewHeaderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.daliViewHeaderLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(35)))), ((int)(((byte)(3)))));
-            this.daliViewHeaderLbl.Location = new System.Drawing.Point(276, 39);
-            this.daliViewHeaderLbl.Name = "daliViewHeaderLbl";
-            this.daliViewHeaderLbl.Size = new System.Drawing.Size(148, 33);
-            this.daliViewHeaderLbl.TabIndex = 0;
-            this.daliViewHeaderLbl.Text = "Summary";
+            this.daliyViewHeaderLbl.AutoSize = true;
+            this.daliyViewHeaderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.daliyViewHeaderLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(35)))), ((int)(((byte)(3)))));
+            this.daliyViewHeaderLbl.Location = new System.Drawing.Point(12, 29);
+            this.daliyViewHeaderLbl.Name = "daliyViewHeaderLbl";
+            this.daliyViewHeaderLbl.Size = new System.Drawing.Size(148, 33);
+            this.daliyViewHeaderLbl.TabIndex = 0;
+            this.daliyViewHeaderLbl.Text = "Summary";
             // 
             // detailsTab
             // 
@@ -60,7 +60,7 @@ namespace FitnessTracker
             // 
             // WorkoutsTab
             // 
-            this.WorkoutsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(211)))));
+            this.WorkoutsTab.BackColor = System.Drawing.Color.WhiteSmoke;
             this.WorkoutsTab.Location = new System.Drawing.Point(4, 29);
             this.WorkoutsTab.Name = "WorkoutsTab";
             this.WorkoutsTab.Padding = new System.Windows.Forms.Padding(3);
@@ -85,7 +85,7 @@ namespace FitnessTracker
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(742, 462);
             this.Controls.Add(this.detailsTab);
-            this.Controls.Add(this.daliViewHeaderLbl);
+            this.Controls.Add(this.daliyViewHeaderLbl);
             this.Name = "DailyViewForm";
             this.Text = "DailyViewForm";
             this.detailsTab.ResumeLayout(false);
@@ -96,7 +96,7 @@ namespace FitnessTracker
 
         #endregion
 
-        private System.Windows.Forms.Label daliViewHeaderLbl;
+        private System.Windows.Forms.Label daliyViewHeaderLbl;
         private System.Windows.Forms.TabControl detailsTab;
         private System.Windows.Forms.TabPage WorkoutsTab;
         private System.Windows.Forms.TabPage CheatMealsTab;

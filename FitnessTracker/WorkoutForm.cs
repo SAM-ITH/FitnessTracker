@@ -28,6 +28,7 @@ namespace FitnessTracker
             InitializeComponent();
             LoadWorkoutTypes();
             _workoutService = new WorkoutService();
+            workoutDatePicker.MaxDate = DateTime.Today;
         }
 
         private void LoadWorkoutTypes()
@@ -44,7 +45,6 @@ namespace FitnessTracker
                 WorkoutTypes workoutType = (WorkoutTypes)item;
                 workoutControlPnl.Controls.Clear();
                 workoutControlPnl.Controls.AddRange(FormControlUtil.GetExerciseTypeControls(workoutType));
-                AppendValidationForTextBoxes();
                 // resize the panel (extension method)
                 workoutControlPnl.ResizePanel(5);
                 workoutControlPnl.Show();
@@ -58,6 +58,18 @@ namespace FitnessTracker
                 workoutControlPnl.Controls.Clear();
                 workoutControlPnl.Hide();
                 workoutDatePnl.Hide();
+            }
+        }
+
+        private void workoutSaveBtn_Click(object sender, EventArgs e)
+        {
+            if (ValidateChildren(ValidationConstraints.Enabled) && ValidateAdditionalFields())
+            {
+                CreateWorkout();
+                home Home = new home();
+                Hide();
+                Home.Activate();
+                Home.ShowDialog();
             }
         }
 
@@ -100,6 +112,7 @@ namespace FitnessTracker
                     CreateRepControls(fields);
                     break;
             }
+            workout.Fields = fields;
         }
 
         #region Creating Fields
@@ -141,18 +154,6 @@ namespace FitnessTracker
         #endregion
 
         #region Workout TextBox Validation
-
-        private void AppendValidationForTextBoxes()
-        {
-            /*foreach (Control control in pnlWorkoutControls.Controls)
-            {
-              if (control.GetType() == typeof(TextBox))
-              {
-                control.Validating += WorkoutText_Validate;
-              }
-            }*/
-        }
-
         private bool ValidateAdditionalFields()
         {
             foreach (Control control in workoutControlPnl.Controls)
@@ -228,18 +229,6 @@ namespace FitnessTracker
             {
                 e.Cancel = false;
                 workoutErrorMessage.SetError(workoutTypesCombo, string.Empty);
-            }
-        }
-
-        private void workoutSaveBtn_Click(object sender, EventArgs e)
-        {
-            if (ValidateChildren(ValidationConstraints.Enabled) && ValidateAdditionalFields())
-            {
-                CreateWorkout();
-                home Home = new home();
-                Hide();
-                Home.Activate();
-                Home.ShowDialog();
             }
         }
     }

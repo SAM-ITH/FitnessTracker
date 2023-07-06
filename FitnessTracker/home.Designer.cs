@@ -355,7 +355,7 @@ namespace FitnessTracker
             // 
             this.reportsHeaderLbl.AutoSize = true;
             this.reportsHeaderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportsHeaderLbl.Location = new System.Drawing.Point(272, 22);
+            this.reportsHeaderLbl.Location = new System.Drawing.Point(264, 22);
             this.reportsHeaderLbl.Name = "reportsHeaderLbl";
             this.reportsHeaderLbl.Size = new System.Drawing.Size(180, 31);
             this.reportsHeaderLbl.TabIndex = 0;
@@ -363,6 +363,7 @@ namespace FitnessTracker
             // 
             // weeklyViewNavPnl
             // 
+            this.weeklyViewNavPnl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.weeklyViewNavPnl.Controls.Add(this.rightArrowPic);
             this.weeklyViewNavPnl.Controls.Add(this.leftArrowPic);
             this.weeklyViewNavPnl.Controls.Add(this.navPnlWeekLbl);
@@ -381,6 +382,7 @@ namespace FitnessTracker
             // 
             // dailyListPnl
             // 
+            this.dailyListPnl.AutoScroll = true;
             this.dailyListPnl.Location = new System.Drawing.Point(24, 189);
             this.dailyListPnl.Name = "dailyListPnl";
             this.dailyListPnl.Size = new System.Drawing.Size(713, 289);
@@ -389,7 +391,8 @@ namespace FitnessTracker
             // navPnlWeekLbl
             // 
             this.navPnlWeekLbl.AutoSize = true;
-            this.navPnlWeekLbl.Location = new System.Drawing.Point(164, 11);
+            this.navPnlWeekLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(167)))), ((int)(((byte)(137)))));
+            this.navPnlWeekLbl.Location = new System.Drawing.Point(103, 11);
             this.navPnlWeekLbl.Name = "navPnlWeekLbl";
             this.navPnlWeekLbl.Size = new System.Drawing.Size(63, 24);
             this.navPnlWeekLbl.TabIndex = 0;
@@ -398,11 +401,12 @@ namespace FitnessTracker
             // weelyViewPnlHeaderLbl
             // 
             this.weelyViewPnlHeaderLbl.AutoSize = true;
-            this.weelyViewPnlHeaderLbl.Location = new System.Drawing.Point(303, 9);
+            this.weelyViewPnlHeaderLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(19)))), ((int)(((byte)(18)))));
+            this.weelyViewPnlHeaderLbl.Location = new System.Drawing.Point(135, 9);
             this.weelyViewPnlHeaderLbl.Name = "weelyViewPnlHeaderLbl";
-            this.weelyViewPnlHeaderLbl.Size = new System.Drawing.Size(66, 24);
+            this.weelyViewPnlHeaderLbl.Size = new System.Drawing.Size(393, 24);
             this.weelyViewPnlHeaderLbl.TabIndex = 0;
-            this.weelyViewPnlHeaderLbl.Text = "label2";
+            this.weelyViewPnlHeaderLbl.Text = "No Data avialable for selected date range";
             // 
             // leftArrowPic
             // 
@@ -412,6 +416,7 @@ namespace FitnessTracker
             this.leftArrowPic.Size = new System.Drawing.Size(24, 24);
             this.leftArrowPic.TabIndex = 1;
             this.leftArrowPic.TabStop = false;
+            this.leftArrowPic.Click += new System.EventHandler(this.leftArrowPic_Click);
             // 
             // rightArrowPic
             // 
@@ -421,6 +426,7 @@ namespace FitnessTracker
             this.rightArrowPic.Size = new System.Drawing.Size(24, 24);
             this.rightArrowPic.TabIndex = 2;
             this.rightArrowPic.TabStop = false;
+            this.rightArrowPic.Click += new System.EventHandler(this.rightArrowPic_Click);
             // 
             // home
             // 
