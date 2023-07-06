@@ -29,5 +29,15 @@ namespace FitnessTracker.Services
         {
             cheatMealDetails.DeleteCheatMeal(id);
         }
+
+        public List<CheatMeal> GetWeeklyCheatMeals(DateTime startDate, DateTime endDate)
+        {
+            return cheatMealDetails.GetWeeklyCheatMeals(startDate, endDate);
+        }
+
+        public void EditCheatMeal(int cheatMealId, CheatMeal newCheatMeal)
+        {
+            cheatMealDetails.EditCheatMeal(cheatMealId, newCheatMeal);
+        }
     }
 }
