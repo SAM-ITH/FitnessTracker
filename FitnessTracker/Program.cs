@@ -19,6 +19,7 @@ namespace FitnessTracker
             userDetails.InitializeUserDetails();
             workoutDetails.InitializeWorkoutDetails();
             cheatMealDetails.InitializeCheatMealDetails();
+            workoutDetails.InitializeWorkoutDetails();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

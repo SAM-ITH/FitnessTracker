@@ -87,7 +87,6 @@ namespace FitnessTracker.Context
             }
             return weeklyWorkouts;
         }
-
         public static void EditWorkout(int workoutId, Workout newWorkout)
         {
             string userName = userDetails.CurrentProfile.UserName;
