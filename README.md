@@ -114,7 +114,7 @@ week.
 <!-- Use Case Diagram -->
 ## Use Case Diagram
 
-![usecase diagram][usecasedigram]
+![usecasedigram]
 
 ### Use case description
 
