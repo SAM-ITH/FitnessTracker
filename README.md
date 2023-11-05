@@ -12,23 +12,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/SAM-ITH/Finance_Calculator">
+  <a href="https://github.com/SAM-ITH/FitnessTracker">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Estimer</h3>
+<h3 align="center">Fitness Tracker</h3>
 
   <p align="center">
-    Finance calculator to calculate the savings, loans and mortage. the app has capability to calculate one of missing parameters. this project has been done as a requirment to the 7SENG999C Mobile Application Development module.
+    Fitness Tracker is a fitness tracking and prediction tool for personal use. This tool will enable you to record your workouts and cheat meals, generate reports.this project has been done as a requirment to the 7SENG001C Enterprise Application Development module.
     <br />
-    <a href="https://github.com/SAM-ITH/Finance_Calculator"><strong>Course work file »</strong></a>
+    <a href="https://github.com/SAM-ITH/FitnessTracker"><strong>Course work file »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/SAM-ITH/Finance_Calculator">View Demo</a>
+    <a href="https://github.com/SAM-ITH/FitnessTracker">View Demo</a>
     ·
-    <a href="https://github.com/SAM-ITH/Finance_Calculator/issues">Report Bug</a>
+    <a href="https://github.com/SAM-ITH/FitnessTracker/issues">Report Bug</a>
     ·
-    <a href="https://github.com/SAM-ITH/Finance_Calculator/issues">Request Feature</a>
+    <a href="https://github.com/SAM-ITH/FitnessTracker/issues">Request Feature</a>
   </p>
 </div>
 
@@ -62,30 +62,15 @@
 
 - Main requirment for this project as follows 
 
-You are to create a financial app for the iPhone. The app shall have the capability of undertaking typical financial calculations such as savings, loans, and mortgages. The app shall have the ability to solve for one unknown from the given parameters noted in bold:
-
-- N – total number of payments (synonymous with time of loan/saving period)
-- r (%) – interest rate
-- P – present value
-- PMT – Payment A – future value
-- PayPY – number of payments per year
-- CpY – number of compound payments per year
-- PmtAt – payment due at the beginning or end of each period (default is END)
-
-The app shall split typical financial problems up over typically four/five views: 1) Compound Interest savings (fixed sum investment with no further payments)
-2) Savings – compound interest with regular contributions (this is savings where there might be sum invested with a subsequent further monthly contribution)
-3) Loans - compound interest with regular payments 4) Mortgage
-In addition to this the software shall contain a help view that will contain instructions and guidance to the user on how to use the software. You have complete freedom on how to implement this view and this can be done as separate view or modal context views for example, e.g. a pop- overview activated by a help button.
+The user must have the ability to add their weight followed by workouts and/or cheat meals for a given day. They may one-off or recurring. You should also provide a weekly view showing the workout and cheat meals for each day of the week.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 ### Built With
 
-* [Swift](https://www.swift.org)
-* [SwiftUI](https://developer.apple.com/xcode/swiftui/)
+* [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
+* [WindowsForms](https://learn.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=vs-2022)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -93,17 +78,33 @@ In addition to this the software shall contain a help view that will contain ins
 
 
 <!-- GETTING STARTED -->
-## Requirments
+## Functional Requirments
 
-- The software shall allow the user to estimate interest rate based on other financial data given in Table 1 - Financial parameters.
-- The software shall allow the user to estimate final value based on other financial data given in Table 1 - Financial parameters.
-- The software shall allow the user to estimate present value based on other financial data given in Table 1 - Financial parameters.
-- The software shall allow the user to estimate the payment based on other financial data given in Table 1 - Financial parameters.
-- The software shall allow the user to estimate number of payments based on other financial data given in Table 1 - Financial parameters.
-- The software shall persistently save all user data. (History of all calculations)
-- The software shall provide a help view Notes:
+• User registration: Provide a mechanism for users to create an account to access the fitness tracking app.
+• User profile: Allow users to input and update their information.
+• Recording workouts – enable users to add details of their workouts.
+• Recording cheat meals – allow users to log information about cheat meals.
+• Daily tracking
+• One off and recurring entries – allow users to input one-time or recurring workouts
+and cheat melas.
+• Report generation – generate reports summarising the recorded workouts and cheat
+meals.
+• Fitness prediction – predict the users future fitness status according to their workouts.
+• Weekly view – display all the work outs and cheat meals regrading to the selected
+week.
+
+## Non-Functional Requirments
+
+• User friendly interface
+• Performance and responsiveness
+• Reliability and availability
+• Scalability
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## Domain Model for the system
+
+![Domain model Screen Shot][domainmodel-image]
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -143,7 +144,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@Mechacoder](https://twitter.com/Mechacoder)
 
-Project Link: [https://github.com/SAM-ITH/Finance_Calculator](https://github.com/SAM-ITH/Finance_Calculator)
+Project Link: [https://github.com/SAM-ITH/FitnessTracker](https://github.com/SAM-ITH/FitnessTracker)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -151,16 +152,17 @@ Project Link: [https://github.com/SAM-ITH/Finance_Calculator](https://github.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/SAM-ITH/Finance_Calculator.svg?style=for-the-badge
-[contributors-url]: https://github.com/SAM-ITH/Finance_Calculator/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/SAM-ITH/Finance_Calculator.svg?style=for-the-badge
-[forks-url]: https://github.com/SAM-ITH/Finance_Calculator/network/members
-[stars-shield]: https://img.shields.io/github/stars/SAM-ITH/Finance_Calculator.svg?style=for-the-badge
-[stars-url]: https://github.com/SAM-ITH/Finance_Calculator/stargazers
-[issues-shield]: https://img.shields.io/github/issues/SAM-ITH/Finance_Calculator.svg?style=for-the-badge
-[issues-url]: https://github.com/SAM-ITH/Finance_Calculator/issues
-[license-shield]: https://img.shields.io/github/license/SAM-ITH/Finance_Calculator.svg?style=for-the-badge
-[license-url]: https://github.com/SAM-ITH/Finance_Calculator/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/SAM-ITH/FitnessTracker.svg?style=for-the-badge
+[contributors-url]: https://github.com/SAM-ITH/FitnessTracker/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/SAM-ITH/FitnessTracker.svg?style=for-the-badge
+[forks-url]: https://github.com/SAM-ITH/FitnessTracker/network/members
+[stars-shield]: https://img.shields.io/github/stars/SAM-ITH/FitnessTracker.svg?style=for-the-badge
+[stars-url]: https://github.com/SAM-ITH/FitnessTracker/stargazers
+[issues-shield]: https://img.shields.io/github/issues/SAM-ITH/FitnessTracker.svg?style=for-the-badge
+[issues-url]: https://github.com/SAM-ITH/FitnessTracker/issues
+[license-shield]: https://img.shields.io/github/license/SAM-ITH/FitnessTracker.svg?style=for-the-badge
+[license-url]: https://github.com/SAM-ITH/FitnessTracker/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/samithwijesighe
 [product-screenshot]: images/screenshot.png
+[domainmodel-image]: images/domainmodel.png
