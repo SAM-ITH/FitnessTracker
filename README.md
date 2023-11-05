@@ -215,6 +215,5 @@ Project Link: [https://github.com/SAM-ITH/FitnessTracker](https://github.com/SAM
 [linkedin-url]: https://linkedin.com/in/samithwijesighe
 [product-screenshot]: images/screenshot.png
 [domainmodel-image]: images/domainmodel.png
-[usecasedigram] : images/usecasedigram.png
 
 
