@@ -169,10 +169,13 @@ discard the form without submitting it.
 <!-- USAGE EXAMPLES -->
 ## UI's
 
-| Syntax      | Description |
+| UI      | UI |
 | ----------- | ----------- |
-| ![SC1]      | ![SC2][SC2]      |
-| Paragraph   | Text        |
+| ![SC1]      | ![SC2]      |
+| ![SC3]   | ![SC4]        |
+| ![SC5]   | ![SC6]        |
+| ![SC7]   | ![SC8]        |
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -220,4 +223,4 @@ Project Link: [https://github.com/SAM-ITH/FitnessTracker](https://github.com/SAM
 [SC6]: images/SC6.png
 [SC7]: images/SC7.png
 [SC8]: images/SC8.png
-[SC9]: images/SC9.png
+
