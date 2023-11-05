@@ -80,31 +80,35 @@ The user must have the ability to add their weight followed by workouts and/or c
 <!-- GETTING STARTED -->
 ## Functional Requirments
 
-• User registration: Provide a mechanism for users to create an account to access the fitness tracking app.
-• User profile: Allow users to input and update their information.
-• Recording workouts – enable users to add details of their workouts.
-• Recording cheat meals – allow users to log information about cheat meals.
-• Daily tracking
-• One off and recurring entries – allow users to input one-time or recurring workouts
+- User registration: Provide a mechanism for users to create an account to access the fitness tracking app.
+- User profile: Allow users to input and update their information.
+- Recording workouts – enable users to add details of their workouts.
+- Recording cheat meals – allow users to log information about cheat meals.
+- Daily tracking
+- One off and recurring entries – allow users to input one-time or recurring workouts
 and cheat melas.
-• Report generation – generate reports summarising the recorded workouts and cheat
+- Report generation – generate reports summarising the recorded workouts and cheat
 meals.
-• Fitness prediction – predict the users future fitness status according to their workouts.
-• Weekly view – display all the work outs and cheat meals regrading to the selected
+- Fitness prediction – predict the users future fitness status according to their workouts.
+- Weekly view – display all the work outs and cheat meals regrading to the selected
 week.
 
 ## Non-Functional Requirments
 
-• User friendly interface
-• Performance and responsiveness
-• Reliability and availability
-• Scalability
+- User friendly interface
+- Performance and responsiveness
+- Reliability and availability
+- Scalability
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Domain Model for the system
 
 ![Domain model Screen Shot][domainmodel-image]
+
+## Use Case Diagram
+
+![usecase diagram][usecasedigram]
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -166,3 +170,4 @@ Project Link: [https://github.com/SAM-ITH/FitnessTracker](https://github.com/SAM
 [linkedin-url]: https://linkedin.com/in/samithwijesighe
 [product-screenshot]: images/screenshot.png
 [domainmodel-image]: images/domainmodel.png
+[usecasedigram]: images/usecasedigram.png
