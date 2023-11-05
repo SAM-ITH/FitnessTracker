@@ -80,7 +80,7 @@ The user must have the ability to add their weight followed by workouts and/or c
 
 
 
-<!-- GETTING STARTED -->
+<!-- Functional Requirments -->
 ## Functional Requirments
 
 - User registration: Provide a mechanism for users to create an account to access the fitness tracking app.
@@ -96,6 +96,7 @@ meals.
 - Weekly view – display all the work outs and cheat meals regrading to the selected
 week.
 
+<!-- Non-Functional Requirments -->
 ## Non-Functional Requirments
 
 - User friendly interface
@@ -105,10 +106,12 @@ week.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- Domain Model for the system -->
 ## Domain Model for the system
 
 ![Domain model Screen Shot][domainmodel-image]
 
+<!-- Use Case Diagram -->
 ## Use Case Diagram
 
 ![usecase diagram][usecasedigram]
@@ -164,26 +167,12 @@ error message and prompt them to fill in the missing fields.
 discard the form without submitting it.
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## UI's
 
-A user wishes to calculate the interest required to return a future value for a fixed initial investment sum over a known period of time. E.g. A user wishes to know if they invest Rs.100,000 for 5 years, what interest rate would be required to return a future value of Rs.300,000.
-
-A user wishes to calculate the length of time (number of compound payments) required to return a future value for a known fixed initial investment given a known interest rate.
-
-E.g. A user wished to know how long it would be before an investment of Rs.100,000 at an interest rate of 4% returned a future value of Rs.300,000.
-
-A user wishes to calculate the initial investment (present value) that will return a known future value given a known interest rate and investment period (time).
-
-1. For the purpose of this application all payments and compound interest and be considered to be monthly. So, for example 60 payments is equivalent to 5 years.
-2. If the app is backgrounded or closed by the user or runtime, all user data will be preserved persistently and the entry text fields repopulated with the last data used when the app is started or foregrounded.
-3. Compounds are monthly payments from the interest on a on savings or are the monthly interest charges on a loan.
-
-E.g. A user wished to know how much to initially invest to get a future value of Rs.300,000 on a savings account with an interest rate of 4% over a 5-year period.
-E.g. A user wished to know how much to initially invest to get a future value of Rs.500,000 on a savings account with an interest rate of 4% over a 5-year period where they make monthly payments into their savings account of Rs.10,000.
-
-Note that loans are very similar to the above, for example, a user wished to borrow Rs.300,000, they can afford to pay Rs.35,000 a month, how many
-monthly payments (remember this is the same as time) would they need to make if the best loan interest rate they could get was 7%?
-
+| Syntax      | Description |
+| ----------- | ----------- |
+| ![SC1]      | ![SC2][SC2]      |
+| Paragraph   | Text        |
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -223,4 +212,12 @@ Project Link: [https://github.com/SAM-ITH/FitnessTracker](https://github.com/SAM
 [linkedin-url]: https://linkedin.com/in/samithwijesighe
 [product-screenshot]: images/screenshot.png
 [domainmodel-image]: images/domainmodel.png
-[usecasedigram]: images/usecasedigram.png
+[sc1]: images/SC1.png
+[SC2]: images/SC2.png
+[SC3]: images/SC3.png
+[SC4]: images/SC4.png
+[SC5]: images/SC5.png
+[SC6]: images/SC6.png
+[SC7]: images/SC7.png
+[SC8]: images/SC8.png
+[SC9]: images/SC9.png
