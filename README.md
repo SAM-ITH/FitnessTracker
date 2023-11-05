@@ -45,8 +45,11 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Requirments</a>
+      <a href="#Functional Requirments">Functional Requirments</a>
     </li>
+    <li><a href="#Non-Functional Requirments">Non-Functional Requirments</a></li>
+    <li><a href="#Domain Model for the system">Domain Model for the system</a></li>
+    <li><a href="#Use Case Diagram">Use Case Diagram</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -109,6 +112,56 @@ week.
 ## Use Case Diagram
 
 ![usecase diagram][usecasedigram]
+
+### Use case description
+
+#### User login
+
+- Use case: User Login
+- Description: This use case outlines the process of a user logging into the fitness
+tracking app.
+- Acters – User
+- Preconditions – user need to be register with fitness tracking app.
+- Main Flow
+    - User launches fitness tracker app.
+    - System presents the login screen.
+    - The user enters the username and password into the fields. o The user clicks on the login button.
+    - System validates the data with existing user data.
+    - System navigates to home page.
+    - User can now record the workout and cheat meal data.
+- Postconditions
+    - User successfully login to the app.
+    - User gain access to functionalities provide by the app.
+- Alternative flows
+    - The system will display an error message and prompt the user to re-enter their
+credentials if the entered credentials are invalid or do not match any registered
+user.
+    - If user is not registered, he can register via signup button.
+    
+#### Record Workout
+
+- Use case: record workout.
+- Description: This use case describes the steps involved when a user records a workout
+in the fitness tracking app.
+- Actors: user
+- Preconditions: User must be log into the app
+- Main Flow:
+    - The user navigates to the "Record Workout" tab of the fitness tracking app. o The system presents a form or interface for recording the workout details. o The user selects the exercise type from a predefined list or enters a custom
+exercise type.
+    - The user enters the duration of the workout in minutes or hours.
+    - The user submits the workout entry form.
+    - The system validates the input and saves the workout details to the user's
+account.
+    - The system updates the user's workout history with the newly recorded
+workout.  
+- Postconditions
+    - The fitness tracking and prediction tool records and stores the user's work out details.
+    - These details can be used to generate reports and predictions. 
+- Alternative Flows
+    - If the user forgets to enter any required information, the system will display an
+error message and prompt them to fill in the missing fields.
+    - If the user wishes to cancel the workout recording, they can navigate back or
+discard the form without submitting it.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
