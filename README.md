@@ -171,7 +171,7 @@ discard the form without submitting it.
 
 | UI      | UI |
 | ----------- | ----------- |
-| ![SC1][SC1]      | ![SC2]      |
+| ![SC1](images/SC1.png)      | ![SC2]      |
 | ![SC3]   | ![SC4]        |
 | ![SC5]   | ![SC6]        |
 | ![SC7]   | ![SC8]        |
