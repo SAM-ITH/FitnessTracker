@@ -114,7 +114,7 @@ week.
 <!-- Use Case Diagram -->
 ## Use Case Diagram
 
-![usecasedigram]
+![usecasedigram](images/usecasedigram.png)
 
 ### Use case description
 
@@ -171,10 +171,10 @@ discard the form without submitting it.
 
 | UI      | UI |
 | ----------- | ----------- |
-| ![SC1](images/SC1.png)      | ![SC2]      |
-| ![SC3]   | ![SC4]        |
-| ![SC5]   | ![SC6]        |
-| ![SC7]   | ![SC8]        |
+| ![SC1](images/SC1.png)      | ![SC2](images/SC2.png)      |
+| ![SC3](images/SC3.png)   | ![SC4](images/SC4.png)        |
+| ![SC5](images/SC5.png)   | ![SC6](images/SC6.png)        |
+| ![SC7](images/SC7.png)   | ![SC8](images/SC8.png)        |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -216,12 +216,5 @@ Project Link: [https://github.com/SAM-ITH/FitnessTracker](https://github.com/SAM
 [product-screenshot]: images/screenshot.png
 [domainmodel-image]: images/domainmodel.png
 [usecasedigram] : images/usecasedigram.png
-[sc1]: images/SC1.png
-[SC2]: images/SC2.png
-[SC3]: images/SC3.png
-[SC4]: images/SC4.png
-[SC5]: images/SC5.png
-[SC6]: images/SC6.png
-[SC7]: images/SC7.png
-[SC8]: images/SC8.png
+
 
