@@ -47,10 +47,10 @@
     <li>
       <a href="#Functional Requirments">Functional Requirments</a>
     </li>
-    <li><a href="#Non-Functional Requirments">Non-Functional Requirments</a></li>
-    <li><a href="#Domain Model for the system">Domain Model for the system</a></li>
-    <li><a href="#Use Case Diagram">Use Case Diagram</a></li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#Non-Functional-Requirments">Non-Functional Requirments</a></li>
+    <li><a href="#Domain-Model-for-the-system">Domain Model for the system</a></li>
+    <li><a href="#Use-Case-Diagram">Use Case Diagram</a></li>
+    <li><a href="#UI">Usage</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -166,7 +166,7 @@ error message and prompt them to fill in the missing fields.
     - If the user wishes to cancel the workout recording, they can navigate back or
 discard the form without submitting it.
 
-<!-- USAGE EXAMPLES -->
+<!-- UI -->
 ## UI's
 
 | UI      | UI |
